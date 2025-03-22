@@ -40,7 +40,7 @@ const Summary = ({
 								{selectedPlan.name}({isYearly ? 'Yearly' : 'Monthly'})
 							</span>
 							<span
-								className='underline text-coolgray'
+								className='underline text-coolgray cursor-pointer'
 								onClick={() => {
 									setCurrentStep(2);
 								}}>
