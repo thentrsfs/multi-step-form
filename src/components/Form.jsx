@@ -65,7 +65,7 @@ const Form = ({ formData, setFormData }) => {
 
 				<input
 					className='input validator tabular-nums w-full rounded-md placeholder-coolgray placeholder:font-ubuntu-medium font-ubuntu-medium p-4 hover:border-purplishblue focus:border-purplishblue focus:outline-none text-marineblue text-[16px]'
-					pattern='[0-9]*'
+					pattern='^\+?[0-9\s-]+$'
 					minlength='9'
 					type='tel'
 					name='phone'

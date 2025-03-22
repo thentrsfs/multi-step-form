@@ -205,6 +205,7 @@ function App() {
 	return (
 		<form
 			onSubmit={(e) => e.preventDefault()}
+			onKeyUp={(e) => e.key === 'Enter' && goNext()}
 			className={`${
 				!isDesktop && 'mobile-background'
 			} flex flex-col md:flex-row md:justify-center gap-10 pt-10 items-center h-screen relative bg-magnolia`}>
