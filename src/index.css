@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@layer base {
+  @font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('/fonts/Ubuntu-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url('/fonts/Ubuntu-Medium.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
+  }
+  
+}
+
+body {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  margin: 0;
+  
+}
+
+
+
+@theme{
+  /* Primary colors */
+  --color-marineblue: hsl(213, 96%, 18%);
+  --color-marinebluehover: hsl(213, 96%, 25%);
+  --color-purplishblue: hsl(243, 100%, 62%);
+  --color-purplishbluehover: hsl(243, 100%, 68%);
+  --color-pastelblue: hsl(228, 100%, 84%);
+  --color-lightblue: hsl(206, 94%, 87%);
+  --color-strawberryred: hsl(354, 84%, 57%);
+
+  /* Neutral colors */
+  --color-coolgray: hsl(231, 11%, 63%);
+  --color-lightgray: hsl(229, 24%, 87%);
+  --color-magnolia: hsl(217, 100%, 97%);
+  --color-alabaster: hsl(231, 100%, 99%);
+
+  /* Font families */
+  --font-ubuntu: 'Ubuntu-Regular', sans-serif;
+  --font-ubuntu-medium: 'Ubuntu-Medium', sans-serif;
+  --font-ubuntu-bold: 'Ubuntu-Bold', sans-serif;
+}
+
+.sidebar{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  top: 1.75rem;
+  left: 1.75rem;
+}
+
+.mobile-background{
+  background-image: url('/images/bg-sidebar-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
